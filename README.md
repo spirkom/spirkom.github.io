@@ -1,1 +1,0 @@
-# spirkom.github.io
