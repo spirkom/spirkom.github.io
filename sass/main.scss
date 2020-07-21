@@ -1,0 +1,91 @@
+/* Variables for reused colors */
+$primary: #3292a6;
+$primary-overlay: rgba(50, 146, 166, 0.8);
+
+/* Smooth scrolling when clicking on an achor*/
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Custom stylings for the navbar */
+.navbar{
+    box-shadow: 2px 2px 5px $primary;
+    opacity: 0.9;
+    background: #fff;
+
+    .nav-item{
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+
+    }
+}
+
+/* Custom styling for the hero area/header */
+#showcase{
+    position: relative;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    margin-top: 55px;
+    min-height: 400px;
+
+    .primary-overlay {
+        background: $primary-overlay;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 70px;
+        border-radius: 50%;
+        border: 2px solid $primary;
+        box-shadow: 2px 2px 20px black;
+    }
+
+}
+
+/* Overwriting default Bootstrap button styles */
+.textcolor {
+        color: $primary !important;;
+    }
+
+.bgcolor {
+        background-color: $primary !important;;
+    }
+
+.bordercolor {
+        border-color: $primary !important;;
+    }
+
+.btn {
+    background-color: $primary;
+    border-color: #194a53;
+
+    &:hover {
+        background-color: #d12a24 !important;
+        border-color: #691d0a !important;
+    }
+}
+
+.button{
+    background-color: $primary !important;
+
+    &:hover{
+    background-color: red !important;
+    }
+}
+
+/* Ensuring the fixed navbar stays above the section */
+span.anch {
+    margin-top: -55px; 
+    display: block;
+    height: 55px; 
+    visibility: hidden;
+    position: relative;
+}
